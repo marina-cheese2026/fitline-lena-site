@@ -70,6 +70,10 @@
   }
   .hero h1 .word{display:inline-block;overflow:hidden;vertical-align:top}
   .hero h1 .word-inner{display:inline-block;will-change:transform}
+  .hero p.kicker{
+    font-family:"Fraunces",serif;font-style:italic;font-weight:500;
+    font-size:clamp(17px,2.3vw,20px);color:var(--pine);margin:0 0 16px;
+  }
   .hero p.lead{font-size:clamp(16px,2.1vw,18.5px);color:var(--muted);max-width:52ch;margin:0 0 34px}
   .btns{display:flex;flex-wrap:wrap;gap:14px}
   .btn{
@@ -140,6 +144,11 @@
     .about-photo{max-width:300px;margin:0 auto}
   }
 
+  /* feature-text: центрированный текстовый блок без фото, тот же тон, что about-text */
+  .feature-text{max-width:640px;margin:0 auto;text-align:center}
+  .feature-text p{color:var(--muted);margin:0 0 16px;font-size:16px}
+  .feature-text .btn{margin-top:10px}
+
   /* footer */
   footer{border-top:1px solid var(--line);padding:44px 0;font-size:14px;color:var(--muted)}
   .disclaimer{
@@ -166,8 +175,9 @@
 <div class="hero">
   <div class="wrap hero-grid">
     <div class="hero-text">
-      <div class="eyebrow">Персональный подбор · FitLine</div>
+      <div class="eyebrow">Энергия · Красота · Здоровье 🌿</div>
       <h1 data-split>Нутрицевтика из Германии под вашу задачу</h1>
+      <p class="kicker reveal" data-fade>FitLine Premium — продукт клеточной регенерации</p>
       <p class="lead reveal" data-fade>
         Продукция FitLine от PM-International. Отвечаю на вопросы, помогаю разобраться
         в линейке и подбираю схему под то, что вас действительно беспокоит —
@@ -262,7 +272,7 @@
       </div>
       <div class="about-text">
         <div class="eyebrow">Кто подбирает</div>
-        <h2>Меня зовут Елена</h2>
+        <h2>Меня зовут Елена Шакирова</h2>
         <p>
           Я независимый партнёр PM-International и сама пользуюсь продукцией FitLine.
           Помогаю разобраться в линейке и подобрать то, что подойдёт под вашу задачу —
@@ -272,7 +282,7 @@
           Начнём с разговора о том, что вас беспокоит. Дальше подберём схему,
           расскажу про цены и доставку, отвечу на вопросы.
         </p>
-        <a class="btn btn-primary" href="https://t.me/LenaIIFit_bot">Написать Елене</a>
+        <a class="btn btn-primary" href="https://t.me/LenaIIFit_bot">Написать Елене Шакировой</a>
       </div>
     </div>
   </div>
@@ -294,6 +304,25 @@
         <h3>Схема на день</h3>
         <p>Продукты сочетаются между собой по времени суток и задачам, а не дублируют друг друга.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap">
+    <div class="feature-text reveal" data-batch>
+      <div class="eyebrow">Для постоянных клиентов</div>
+      <h2>Партнёрство и цена со скидкой</h2>
+      <p>
+        Продукция FitLine продаётся по розничной и по партнёрской цене. Если вы
+        планируете пользоваться линейкой регулярно, есть смысл оформить партнёрство
+        в PM-International и покупать со скидкой — так же, как это делаю я.
+      </p>
+      <p>
+        Расскажу условия, как это оформляется и что входит в партнёрский пакет —
+        напишите в Telegram, разберём именно вашу ситуацию.
+      </p>
+      <a class="btn btn-primary" href="https://t.me/LenaIIFit_bot">Узнать про партнёрство</a>
     </div>
   </div>
 </section>
